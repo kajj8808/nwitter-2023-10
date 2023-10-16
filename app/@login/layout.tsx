@@ -1,4 +1,3 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -11,16 +10,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  dashboard,
-  login,
 }: {
-  dashboard: React.ReactNode;
   children: React.ReactNode;
-  login: React.ReactNode;
 }) {
   return (
     <html lang="kr">
-      <body className={`${inter.className} bg-black text-white`}>{login}</body>
+      <body className={`${inter.className} bg-black text-white`}>
+        {children}
+      </body>
     </html>
   );
 }
