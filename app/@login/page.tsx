@@ -1,5 +1,5 @@
-import SignBtn from "../components/sign-btn";
-import SocialBtn from "../components/social-btn";
+import SignBtn from "../components/github-btn";
+import GithubBtn from "../components/social-btn";
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
         <p className="text-[43px] font-bold">지금 일어나고 있는 일</p>
         <p className="mt-10 font-bold text-2xl">지금 가입하세요.</p>
         <div className="mt-3 flex flex-col w-80">
-          <SocialBtn social="google" />
-          <SocialBtn social="github" />
+          <GithubBtn social="google" />
+          <GithubBtn social="github" />
           <div className="relative mt-3 ">
             <div className="absolute w-full border-t border-gray-700" />
             <div className="relative -top-3 text-center">
